@@ -21,7 +21,7 @@ h4 {
 
 :root {
   --title-primary: #E95A08;
-  --title-secndary: rgba(0, 0, 0, 0.5);
+  --description-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -98,6 +98,7 @@ h4 {
   font-size: 1.375rem;
   font-weight: 400;
   max-width: 570px;
+  color: var(--description-color);
 }
 
 .banner-text {
@@ -106,4 +107,63 @@ h4 {
 
 .banner-img {
   max-width: 100%;
+}
+
+
+/* Our-Plants-Section  */
+
+.our-plants-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+}
+
+.plants-card {
+  max-width: 270px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.card-description {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  padding: 10px 88px;
+  background-color: var(--title-primary);
+  border: none;
+  color: #ffffff;
+}
+
+.plant {
+  text-align: center;
+  max-width: 888px;
+}
+
+.our-plant-title {
+  display: flex;
+  justify-content: center;
+}
+
+.plants-section-description {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--description-color);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.plants-section-title {
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
