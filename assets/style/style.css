@@ -215,3 +215,122 @@ h4 {
   margin: 35px 0px;
   color: var(--description-color);
 }
+
+
+/* latest-deals-section */
+
+.latest-deals-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  max-width: 1140px;
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.left-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.latest-deals-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1);
+}
+
+.latest-deal-card.large {
+  height: 340px;
+}
+
+.latest-deals-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.latest-deal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1);
+}
+
+.latest-deal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.latest-deal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.latest-deals-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.latest-deal-card.large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-deals-content h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.latest-deals-content p {
+  /* margin-top: 6px; */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.latest-deal-content h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.latest-deal-content p {
+  /* margin-top: 6px; */
+  font-size: 1.75;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}

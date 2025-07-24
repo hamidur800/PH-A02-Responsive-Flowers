@@ -1,4 +1,29 @@
 
+/*latest-deals-section Responsive */
+@media (max-width: 768px) {
+   body {
+    margin: 2px auto;
+   }
+
+  .latest-deals-section {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-deals-card,
+  .latest-deal.large {
+    height: 200px;
+  }
+
+  .left-column {
+    grid-template-rows: auto;
+  }
+
+  .latest-deal-card.large {
+    height: 200px;
+  }
+}
+
+
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   
@@ -8,6 +33,8 @@
     align-items: center;
     height: 35px;
     margin: 16px auto;
+    /* display: inline-block; */
+    margin-bottom: 300px;
   }
   
   
@@ -22,8 +49,50 @@
   }
 
   .banner-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     display: flex;
     align-items: flex-end;
+  }
+
+  .our-plants-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  }
+
+  body {
+    margin: 0 auto;
+   }
+
+
+   .flower-plants-section {
+  display: flex;
+  justify-content: space-between;
+  
+  gap: 80px;
+  margin: 160px auto;
+  flex-direction: column;
+}
+
+.trusted-badge {
+    display: none;
+}
+
+  .latest-deals-section {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-deals-card,
+  .latest-deal.large {
+    height: 200px;
+  }
+
+  .left-column {
+    grid-template-rows: auto;
+  }
+
+  .latest-deal-card.large {
+    height: 200px;
   }
 }
