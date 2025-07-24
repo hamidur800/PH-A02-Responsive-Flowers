@@ -95,4 +95,21 @@
   .latest-deal-card.large {
     height: 200px;
   }
+
+  .newsletter-form {
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .newsletter-form button {
+    width: 110px;
+  }
+
 }

@@ -334,3 +334,62 @@ h4 {
   border-radius: 20px;
   display: inline-block;
 }
+
+/* join-section-style  */
+
+.newsletter-section {
+  background-size: cover;
+  background-position: center;
+  padding: 219px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.newsletter-content h2 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 14px 24px;
+  background-color: #f15b2a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #d34716;
+}
