@@ -1,0 +1,29 @@
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    margin: 16px auto;
+  }
+  
+  
+  .header-active {
+    display: none;
+  }
+  .header-main {
+    display: none;
+  }
+  .header-logo{
+    max-width: 60px;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+  }
+}
