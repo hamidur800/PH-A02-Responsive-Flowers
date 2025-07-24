@@ -1,3 +1,5 @@
+/* Responsive for mobile */
+
 @media screen and (max-width: 768px) {
   .container {
     max-weight: 90%;
@@ -78,14 +80,22 @@
   }
 
   .plants-card {
-    max-width: 100%;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
     margin: 0 auto;
   }
+
+  .card-title {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
 
   .card-button {
     padding: 10px 40px;
   }
-
 
   /* flower-plants-section */
 
@@ -118,13 +128,18 @@
 
   /* plants-section  */
 
-  .plants-section-description {
-    font-size: 0.875rem;
-    font-weight: 400;
-    text-align: center;
-    max-width: 90%;
+ .our-plants-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
+  .plants-card {
+    max-width: 100%;
+  }
+
+  .card-button {
+    padding: 10px 0;
+  }
   
 
 
@@ -198,35 +213,3 @@
 }
 
 
-@media (max-width: 992px) {
-  .our-plants-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .plants-card {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .card-button {
-    padding: 10px 30px;
-  }
-}
-
-/* Mobile: 1 column */
-@media (max-width: 576px) {
-  .our-plants-cards {
-    grid-template-columns: 1fr;
-    margin: 20px auto;
-  }
-
-  .plants-card {
-    width: 80%;
-    max-width: 80%;
-  }
-
-  .card-button {
-    width: 100%;
-    padding: 10px;
-  }
-}
